@@ -1,10 +1,14 @@
 from launch import LaunchDescription
 from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
+import os
 
 def generate_launch_description():
 
-    map_file = '/home/kunal-humble/ros2_ws/src/diff_robot/map/map.yaml'
-    params_file = '/home/kunal-humble/ros2_ws/src/diff_robot/map/nav2_params.yaml'
+    pkg_path = get_package_share_directory('diff_robot')
+
+    map_file = os.path.join(pkg_path, 'map', 'map.yaml')
+    params_file = os.path.join(pkg_path, 'map', 'nav2_params.yaml')
 
     return LaunchDescription([
 

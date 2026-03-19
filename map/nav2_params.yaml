@@ -52,7 +52,7 @@ behavior_server:
 map_server:
   ros__parameters:
     use_sim_time: True
-    yaml_filename: "/home/kunal-humble/ros2_ws/src/diff_robot/map/map.yaml"
+    yaml_filename: ""
 
 # 🔥 GLOBAL COSTMAP
 global_costmap:

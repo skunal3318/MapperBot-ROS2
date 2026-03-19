@@ -3,15 +3,17 @@ from launch import LaunchDescription
 from launch.actions import DeclareLaunchArgument, ExecuteProcess
 from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
+from ament_index_python.packages import get_package_share_directory
 
 
 def generate_launch_description():
 
     # File paths
-    urdf_file_path = '/home/kunal-humble/ros2_ws/src/diff_robot/urdf/diff_robot.urdf'
-    rviz_config_file_path = '/home/kunal-humble/ros2_ws/src/diff_robot/urdf/rviz.rviz'
-    world_file_path = '/home/kunal-humble/ros2_ws/src/diff_robot/world/maze.world'
-    map_file = '/home/kunal-humble/ros2_ws/src/diff_robot/map/map.yaml'
+    pkg_path = get_package_share_directory('diff_robot')
+
+    urdf_file_path = os.path.join(pkg_path, 'urdf', 'diff_robot.urdf')
+    rviz_config_file_path = os.path.join(pkg_path, 'urdf', 'rviz.rviz')
+    world_file_path = os.path.join(pkg_path, 'world', 'maze.world')
 
     # Load robot description
     with open(urdf_file_path, 'r') as infp:
