@@ -8,40 +8,28 @@ from ament_index_python.packages import get_package_share_directory
 
 def generate_launch_description():
 
-    # File paths
     pkg_path = get_package_share_directory('diff_robot')
 
     urdf_file_path = os.path.join(pkg_path, 'urdf', 'diff_robot.urdf')
     rviz_config_file_path = os.path.join(pkg_path, 'urdf', 'rviz.rviz')
     world_file_path = os.path.join(pkg_path, 'world', 'maze.world')
 
-    # Load robot description
+    
     with open(urdf_file_path, 'r') as infp:
         robot_desc = infp.read()
 
     return LaunchDescription([
 
-        # Launch arguments
-        DeclareLaunchArgument(
-            name='model',
-            default_value=urdf_file_path
-        ),
+       
+        DeclareLaunchArgument('model', default_value=urdf_file_path),
+        DeclareLaunchArgument('rvizconfig', default_value=rviz_config_file_path),
+        DeclareLaunchArgument('world', default_value=world_file_path),
 
-        DeclareLaunchArgument(
-            name='rvizconfig',
-            default_value=rviz_config_file_path
-        ),
+        DeclareLaunchArgument('x', default_value='0.0'),
+        DeclareLaunchArgument('y', default_value='0.0'),
+        DeclareLaunchArgument('z', default_value='0.15'),
 
-        DeclareLaunchArgument(
-            name='world',
-            default_value=world_file_path
-        ),
-
-        DeclareLaunchArgument(name='x', default_value='0.0'),
-        DeclareLaunchArgument(name='y', default_value='0.0'),
-        DeclareLaunchArgument(name='z', default_value='0.15'),
-
-        # Gazebo
+        
         ExecuteProcess(
             cmd=[
                 'gazebo',
@@ -53,7 +41,7 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Spawn robot
+      
         Node(
             package='gazebo_ros',
             executable='spawn_entity.py',
@@ -67,55 +55,17 @@ def generate_launch_description():
             output='screen'
         ),
 
-        # Robot state publisher
+    
         Node(
             package='robot_state_publisher',
             executable='robot_state_publisher',
+            output='screen',
             parameters=[
                 {'robot_description': robot_desc},
                 {'use_sim_time': True}
             ]
         ),
 
-        # Map Server
-        # Node(
-        #     package='nav2_map_server',
-        #     executable='map_server',
-        #     name='map_server',
-        #     output='screen',
-        #     parameters=[
-        #         {'yaml_filename': map_file},
-        #         {'use_sim_time': True}
-        #     ]
-        # ),
-
-        # # AMCL
-        # Node(
-        #     package='nav2_amcl',
-        #     executable='amcl',
-        #     name='amcl',
-        #     output='screen',
-        #     parameters=[
-        #         {'use_sim_time': True}
-        #     ]
-        # ),
-
-        # # Lifecycle Manager (VERY IMPORTANT)
-        # Node(
-        #     package='nav2_lifecycle_manager',
-        #     executable='lifecycle_manager',
-        #     name='lifecycle_manager_localization',
-        #     output='screen',
-        #     parameters=[{
-        #         'use_sim_time': True,
-        #         'autostart': True,
-        #         'node_names': ['map_server', 'amcl']
-        #     }]
-        # ),
-
-        # RViz
-
-        Node( package='slam_toolbox', executable='async_slam_toolbox_node', name='slam_toolbox', output='screen', parameters=[ '/home/kunal-humble/ros2_ws/src/diff_robot/map/slam_params.yaml', {'use_sim_time': True} ] ),
         Node(
             package='rviz2',
             executable='rviz2',
