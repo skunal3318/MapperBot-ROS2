@@ -10,7 +10,7 @@
   <img src="https://img.shields.io/badge/Status-Production--Ready-brightgreen">
 </p>
 
-<h1 align="center">🚗 ROS 2 Autonomous Navigation Robot</h1>
+<h1 align="center">ROS 2 Autonomous Navigation Robot</h1>
 
 <p align="center">
 A <b>fully autonomous mobile robot</b> built using <b>ROS 2 Humble</b>, <b>Gazebo</b>, and <b>Nav2</b>, capable of <b>mapping, localization, and goal-based navigation</b> in a custom simulation environment.
