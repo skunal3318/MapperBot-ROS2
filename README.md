@@ -21,7 +21,7 @@ A <b>fully autonomous mobile robot</b> built using <b>ROS 2 Humble</b>, <b>Gazeb
 ## 🎥 Demo
 
 <p align="center">
-  <img src="images/demo.gif" width="800">
+  <img src="images/1.png" width="800">
 </p>
 
 ---
@@ -29,7 +29,7 @@ A <b>fully autonomous mobile robot</b> built using <b>ROS 2 Humble</b>, <b>Gazeb
 ## 🖼️ Project Showcase
 
 <p align="center">
-  <img src="images/1.png" width="400">
+  <img src="images/3.png" width="400">
   <img src="images/2.png" width="400">
 </p>
 
