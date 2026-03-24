@@ -29,13 +29,13 @@ A <b>fully autonomous mobile robot</b> built using <b>ROS 2 Humble</b>, <b>Gazeb
 ## 🖼️ Project Showcase
 
 <p align="center">
-  <img src="images/gazebo_view.png" width="400">
-  <img src="images/rviz_view.png" width="400">
+  <img src="images/1.png" width="400">
+  <img src="images/2.png" width="400">
 </p>
 
 <p align="center">
-  <img src="images/map.png" width="400">
-  <img src="images/navigation.png" width="400">
+  <img src="images/4.png" width="400">
+  <img src="images/6.png" width="400">
 </p>
 
 ---
@@ -76,7 +76,7 @@ LiDAR → SLAM → Map → AMCL → Nav2 Planner → Controller → cmd_vel → 
 ### 🔹 TF Tree
 
 <p align="center">
-  <img src="images/tf_tree.png" width="500">
+  <img src="images/8.png" width="900">
 </p>
 
 ---
