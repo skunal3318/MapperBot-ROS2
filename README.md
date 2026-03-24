@@ -68,7 +68,7 @@ LiDAR → SLAM → Map → AMCL → Nav2 Planner → Controller → cmd_vel → 
 ### 🔹 ROS 2 Graph (rqt_graph)
 
 <p align="center">
-  <img src="images/ros_graph.png" width="700">
+  <img src="images/rosgraph.png" width="700">
 </p>
 
 ---
