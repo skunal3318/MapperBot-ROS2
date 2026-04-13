@@ -1,0 +1,204 @@
+[0.000000] (-) TimerEvent: {}
+[0.000467] (diff_robot) JobQueued: {'identifier': 'diff_robot', 'dependencies': OrderedDict()}
+[0.000525] (diff_robot) JobStarted: {'identifier': 'diff_robot'}
+[0.008591] (diff_robot) JobProgress: {'identifier': 'diff_robot', 'progress': 'cmake'}
+[0.011298] (diff_robot) JobProgress: {'identifier': 'diff_robot', 'progress': 'build'}
+[0.011445] (diff_robot) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/kunal-humble/ros2_ws/build/diff_robot', '--', '-j12', '-l12'], 'cwd': '/home/kunal-humble/ros2_ws/build/diff_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'kunal-humble'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kunal-humble'), ('OLDPWD', '/home/kunal-humble'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2339'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kunal-humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kunal-humble'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kunal-humble:@/tmp/.ICE-unix/2311,unix/kunal-humble:/tmp/.ICE-unix/2311'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a1b8dde6_8602_46b3_874c_f8c59c0ab6ec'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0MKTM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kunal-humble/ros2_ws/build/diff_robot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099928] (-) TimerEvent: {}
+[0.124184] (diff_robot) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.13 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200092] (-) TimerEvent: {}
+[0.235710] (diff_robot) StdoutLine: {'line': b'-- Found rclcpp: 16.0.18 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.261720] (diff_robot) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.8 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.263910] (diff_robot) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.8 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.269416] (diff_robot) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.8 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.277659] (diff_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.287320] (diff_robot) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.300243] (-) TimerEvent: {}
+[0.313916] (diff_robot) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.315428] (diff_robot) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.10 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.393897] (diff_robot) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[0.400399] (-) TimerEvent: {}
+[0.435649] (diff_robot) StdoutLine: {'line': b'-- Found robot_state_publisher: 3.0.3 (/opt/ros/humble/share/robot_state_publisher/cmake)\n'}
+[0.449659] (diff_robot) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[0.450654] (diff_robot) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[0.500599] (-) TimerEvent: {}
+[0.544471] (diff_robot) StdoutLine: {'line': b'-- Found gazebo_ros: 3.9.0 (/opt/ros/humble/share/gazebo_ros/cmake)\n'}
+[0.595195] (diff_robot) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[0.600725] (-) TimerEvent: {}
+[0.627801] (diff_robot) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[0.631228] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.643746] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[0.647501] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[0.656729] (diff_robot) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[0.657574] (diff_robot) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[0.669596] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[0.669688] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[0.669727] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[0.669760] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[0.669791] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[0.669880] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[0.669916] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[0.669945] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[0.670013] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[0.670042] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[0.670070] (diff_robot) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[0.670096] (diff_robot) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[0.700891] (-) TimerEvent: {}
+[0.734434] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.735709] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[0.736016] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[0.749017] (diff_robot) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[0.755875] (diff_robot) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[0.760169] (diff_robot) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[0.779760] (diff_robot) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[0.801083] (-) TimerEvent: {}
+[0.838200] (diff_robot) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[0.855815] (diff_robot) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[0.901383] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.901683] (-) TimerEvent: {}
+[0.902082] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[0.921693] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.932757] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[0.933921] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[0.934654] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[0.935208] (diff_robot) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[0.935330] (diff_robot) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[0.952551] (diff_robot) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[0.953323] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[0.953981] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[0.954290] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[0.955753] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[0.956147] (diff_robot) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[1.000022] (diff_robot) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[1.001784] (-) TimerEvent: {}
+[1.017879] (diff_robot) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[1.071121] (diff_robot) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[1.087718] (diff_robot) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[1.101900] (-) TimerEvent: {}
+[1.130861] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[1.131403] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.132044] (diff_robot) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[1.136028] (diff_robot) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[1.138529] (diff_robot) StdoutLine: {'line': b'-- Found controller_manager: 2.53.1 (/opt/ros/humble/share/controller_manager/cmake)\n'}
+[1.202000] (-) TimerEvent: {}
+[1.208130] (diff_robot) StdoutLine: {'line': b'-- Found diff_drive_controller: 2.52.0 (/opt/ros/humble/share/diff_drive_controller/cmake)\n'}
+[1.235272] (diff_robot) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.20 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.252800] (diff_robot) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.15 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.302212] (-) TimerEvent: {}
+[1.318815] (diff_robot) StdoutLine: {'line': b"-- Added test 'cppcheck' to perform static code analysis on C / C++ code\n"}
+[1.319106] (diff_robot) StdoutLine: {'line': b'-- Configured cppcheck include dirs: \n'}
+[1.319227] (diff_robot) StdoutLine: {'line': b'-- Configured cppcheck exclude dirs and/or files: \n'}
+[1.320164] (diff_robot) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[1.321745] (diff_robot) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.322661] (diff_robot) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[1.326360] (diff_robot) StdoutLine: {'line': b"-- Added test 'uncrustify' to check C / C++ code style\n"}
+[1.326434] (diff_robot) StdoutLine: {'line': b'-- Configured uncrustify additional arguments: \n'}
+[1.327081] (diff_robot) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.328213] (diff_robot) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.345667] (diff_robot) StdoutLine: {'line': b'-- Generating done\n'}
+[1.349997] (diff_robot) StdoutLine: {'line': b'-- Build files have been written to: /home/kunal-humble/ros2_ws/build/diff_robot\n'}
+[1.372085] (diff_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target pose_publisher\x1b[0m\n'}
+[1.373349] (diff_robot) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target vel_publisher\x1b[0m\n'}
+[1.402352] (-) TimerEvent: {}
+[1.405507] (diff_robot) StdoutLine: {'line': b'[ 75%] \x1b[32mBuilding CXX object CMakeFiles/pose_publisher.dir/src/odom_pose.cpp.o\x1b[0m\n'}
+[1.405634] (diff_robot) StdoutLine: {'line': b'[ 75%] Built target vel_publisher\n'}
+[1.502526] (-) TimerEvent: {}
+[1.602868] (-) TimerEvent: {}
+[1.703225] (-) TimerEvent: {}
+[1.803559] (-) TimerEvent: {}
+[1.903795] (-) TimerEvent: {}
+[2.004107] (-) TimerEvent: {}
+[2.104431] (-) TimerEvent: {}
+[2.204765] (-) TimerEvent: {}
+[2.305085] (-) TimerEvent: {}
+[2.405417] (-) TimerEvent: {}
+[2.505750] (-) TimerEvent: {}
+[2.606074] (-) TimerEvent: {}
+[2.706406] (-) TimerEvent: {}
+[2.806736] (-) TimerEvent: {}
+[2.907072] (-) TimerEvent: {}
+[3.007407] (-) TimerEvent: {}
+[3.107751] (-) TimerEvent: {}
+[3.208077] (-) TimerEvent: {}
+[3.308394] (-) TimerEvent: {}
+[3.408711] (-) TimerEvent: {}
+[3.508989] (-) TimerEvent: {}
+[3.609323] (-) TimerEvent: {}
+[3.709641] (-) TimerEvent: {}
+[3.809942] (-) TimerEvent: {}
+[3.910237] (-) TimerEvent: {}
+[4.010570] (-) TimerEvent: {}
+[4.110865] (-) TimerEvent: {}
+[4.211158] (-) TimerEvent: {}
+[4.311469] (-) TimerEvent: {}
+[4.411794] (-) TimerEvent: {}
+[4.512093] (-) TimerEvent: {}
+[4.612405] (-) TimerEvent: {}
+[4.712660] (-) TimerEvent: {}
+[4.812945] (-) TimerEvent: {}
+[4.913258] (-) TimerEvent: {}
+[5.013545] (-) TimerEvent: {}
+[5.113824] (-) TimerEvent: {}
+[5.214118] (-) TimerEvent: {}
+[5.314434] (-) TimerEvent: {}
+[5.414735] (-) TimerEvent: {}
+[5.515039] (-) TimerEvent: {}
+[5.615328] (-) TimerEvent: {}
+[5.715632] (-) TimerEvent: {}
+[5.815919] (-) TimerEvent: {}
+[5.916197] (-) TimerEvent: {}
+[6.016509] (-) TimerEvent: {}
+[6.116813] (-) TimerEvent: {}
+[6.217106] (-) TimerEvent: {}
+[6.317402] (-) TimerEvent: {}
+[6.417739] (-) TimerEvent: {}
+[6.518082] (-) TimerEvent: {}
+[6.618372] (-) TimerEvent: {}
+[6.628761] (diff_robot) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable pose_publisher\x1b[0m\n'}
+[6.718558] (-) TimerEvent: {}
+[6.818833] (-) TimerEvent: {}
+[6.915819] (diff_robot) StdoutLine: {'line': b'[100%] Built target pose_publisher\n'}
+[6.918992] (-) TimerEvent: {}
+[6.924176] (diff_robot) CommandEnded: {'returncode': 0}
+[6.924588] (diff_robot) JobProgress: {'identifier': 'diff_robot', 'progress': 'install'}
+[6.930901] (diff_robot) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/kunal-humble/ros2_ws/build/diff_robot'], 'cwd': '/home/kunal-humble/ros2_ws/build/diff_robot', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('LANGUAGE', 'en_IN:en'), ('USER', 'kunal-humble'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/kunal-humble'), ('OLDPWD', '/home/kunal-humble'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2339'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'kunal-humble'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'kunal-humble'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/kunal-humble:@/tmp/.ICE-unix/2311,unix/kunal-humble:/tmp/.ICE-unix/2311'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/a1b8dde6_8602_46b3_874c_f8c59c0ab6ec'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_IN'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.0MKTM3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.106'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/kunal-humble/ros2_ws/build/diff_robot'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[6.937621] (diff_robot) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[6.938048] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch\n'}
+[6.938256] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/robot.launch.py\n'}
+[6.938523] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/nav2.launch.py\n'}
+[6.938772] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/__pycache__\n'}
+[6.938842] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/__pycache__/robot.launch.cpython-310.pyc\n'}
+[6.939103] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf\n'}
+[6.939207] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/rviz.rviz\n'}
+[6.939392] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/diff_robot.urdf\n'}
+[6.939650] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/urdf_config.rviz\n'}
+[6.939863] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/world\n'}
+[6.939961] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/world/maze.world\n'}
+[6.940232] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map\n'}
+[6.940327] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.pgm\n'}
+[6.941182] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/nav2_params.yaml\n'}
+[6.941411] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.data\n'}
+[6.955502] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.posegraph\n'}
+[6.980270] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.yaml\n'}
+[6.980505] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/slam_params.yaml\n'}
+[6.981388] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/lib/diff_robot/pose_publisher\n'}
+[6.982970] (diff_robot) StdoutLine: {'line': b'-- Set runtime path of "/home/kunal-humble/ros2_ws/install/diff_robot/lib/diff_robot/pose_publisher" to ""\n'}
+[6.983517] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/lib/diff_robot/vel_publisher\n'}
+[6.983744] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/package_run_dependencies/diff_robot\n'}
+[6.983921] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/parent_prefix_path/diff_robot\n'}
+[6.984138] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/ament_prefix_path.sh\n'}
+[6.984213] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/ament_prefix_path.dsv\n'}
+[6.984249] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/path.sh\n'}
+[6.984307] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/path.dsv\n'}
+[6.984335] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.bash\n'}
+[6.984369] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.sh\n'}
+[6.984414] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.zsh\n'}
+[6.984444] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.dsv\n'}
+[6.984473] (diff_robot) StdoutLine: {'line': b'-- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/package.dsv\n'}
+[6.984660] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/packages/diff_robot\n'}
+[6.984711] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/cmake/diff_robotConfig.cmake\n'}
+[6.984755] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/cmake/diff_robotConfig-version.cmake\n'}
+[6.984784] (diff_robot) StdoutLine: {'line': b'-- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/package.xml\n'}
+[6.985765] (diff_robot) CommandEnded: {'returncode': 0}
+[7.009811] (diff_robot) JobEnded: {'identifier': 'diff_robot', 'rc': 0}
+[7.010237] (-) EventReactorShutdown: {}
