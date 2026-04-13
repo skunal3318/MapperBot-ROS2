@@ -1,9 +1,0 @@
-[0.010s] Invoking command in '/home/kunal-humble/ros2_ws/build/diff_robot': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kunal-humble/ros2_ws/build/diff_robot -- -j12 -l12
-[0.114s] [ 75%] Built target vel_publisher
-[0.115s] [ 75%] [32mBuilding CXX object CMakeFiles/pose_publisher.dir/src/odom_pose.cpp.o[0m
-[0.125s] [01m[Kcc1plus:[m[K [01;31m[Kfatal error: [m[K/home/kunal-humble/ros2_ws/src/diff_robot/src/odom_pose.cpp: No such file or directory
-[0.125s] compilation terminated.
-[0.125s] gmake[2]: *** [CMakeFiles/pose_publisher.dir/build.make:76: CMakeFiles/pose_publisher.dir/src/odom_pose.cpp.o] Error 1
-[0.126s] gmake[1]: *** [CMakeFiles/Makefile2:139: CMakeFiles/pose_publisher.dir/all] Error 2
-[0.126s] gmake: *** [Makefile:146: all] Error 2
-[0.130s] Invoked command in '/home/kunal-humble/ros2_ws/build/diff_robot' returned '2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/kunal-humble/ros2_ws/build/diff_robot -- -j12 -l12
