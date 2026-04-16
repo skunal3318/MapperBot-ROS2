@@ -1,0 +1,44 @@
+[0.008s] Invoking command in '/home/kunal-humble/ros2_ws/build/diff_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kunal-humble/ros2_ws/build/diff_robot -- -j12 -l12
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target pose_publisher[0m
+[0.046s] [35m[1mConsolidate compiler generated dependencies of target vel_publisher[0m
+[0.060s] [ 50%] Built target vel_publisher
+[0.061s] [100%] Built target pose_publisher
+[0.070s] Invoked command in '/home/kunal-humble/ros2_ws/build/diff_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --build /home/kunal-humble/ros2_ws/build/diff_robot -- -j12 -l12
+[0.077s] Invoking command in '/home/kunal-humble/ros2_ws/build/diff_robot': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kunal-humble/ros2_ws/build/diff_robot
+[0.082s] -- Install configuration: ""
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch
+[0.082s] -- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/robot.launch.py
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/nav2.launch.py
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/__pycache__
+[0.082s] -- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot//launch/__pycache__/robot.launch.cpython-310.pyc
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/rviz.rviz
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/diff_robot.urdf
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/urdf_config.rviz
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/world
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/world/maze.world
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map
+[0.082s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.pgm
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/nav2_params.yaml
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.data
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.posegraph
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/map.yaml
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/map/slam_params.yaml
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/lib/diff_robot/pose_publisher
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/lib/diff_robot/vel_publisher
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/package_run_dependencies/diff_robot
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/parent_prefix_path/diff_robot
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/ament_prefix_path.sh
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/ament_prefix_path.dsv
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/path.sh
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/environment/path.dsv
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.bash
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.sh
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.zsh
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/local_setup.dsv
+[0.083s] -- Installing: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/package.dsv
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/ament_index/resource_index/packages/diff_robot
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/cmake/diff_robotConfig.cmake
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/cmake/diff_robotConfig-version.cmake
+[0.083s] -- Up-to-date: /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/package.xml
+[0.084s] Invoked command in '/home/kunal-humble/ros2_ws/build/diff_robot' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/opt/ros/humble /usr/bin/cmake --install /home/kunal-humble/ros2_ws/build/diff_robot

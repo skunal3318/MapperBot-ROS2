@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-b0ed12477285ecef3b1b.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "diff_robot",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "diff_robot_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-diff_robot_uninstall-53dc3f7bdf45ab2fa3db.json",
+					"name" : "diff_robot_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "pose_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-pose_publisher-1a9e8519cbb3c8dbf596.json",
+					"name" : "pose_publisher",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-ae553fa6d9d980f40154.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "vel_publisher::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-vel_publisher-82f5c3a717fd2f91aa9e.json",
+					"name" : "vel_publisher",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/kunal-humble/ros2_ws/build/diff_robot",
+		"source" : "/home/kunal-humble/ros2_ws/src/diff_robot"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}
