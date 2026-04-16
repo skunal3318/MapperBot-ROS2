@@ -1,316 +1,363 @@
-kunal-humble@kunal-humble:~/ros2_ws$ . install/setup.bash 
 kunal-humble@kunal-humble:~/ros2_ws$ ros2 launch diff_robot robot.launch.py
-[INFO] [launch]: All log files can be found below /home/kunal-humble/.ros/log/2026-04-13-07-16-00-786053-kunal-humble-11983
+[INFO] [launch]: All log files can be found below /home/kunal-humble/.ros/log/2026-04-16-20-23-09-173876-kunal-humble-7104
 [INFO] [launch]: Default logging verbosity is set to INFO
-[INFO] [gzserver-1]: process started with pid [11984]
-[INFO] [gzclient-2]: process started with pid [11986]
-[INFO] [spawn_entity.py-3]: process started with pid [11988]
-[INFO] [robot_state_publisher-4]: process started with pid [11990]
-[INFO] [map_server-5]: process started with pid [11992]
-[INFO] [amcl-6]: process started with pid [11994]
-[INFO] [lifecycle_manager-7]: process started with pid [11996]
-[INFO] [controller_server-8]: process started with pid [11998]
-[INFO] [planner_server-9]: process started with pid [12000]
-[INFO] [bt_navigator-10]: process started with pid [12002]
-[INFO] [behavior_server-11]: process started with pid [12004]
-[INFO] [lifecycle_manager-12]: process started with pid [12006]
-[INFO] [rviz2-13]: process started with pid [12017]
-[robot_state_publisher-4] [WARN] [1776044761.238400237] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
-[robot_state_publisher-4] [INFO] [1776044761.238494012] [robot_state_publisher]: got segment base_footprint
-[robot_state_publisher-4] [INFO] [1776044761.238540020] [robot_state_publisher]: got segment base_link
-[robot_state_publisher-4] [INFO] [1776044761.238545719] [robot_state_publisher]: got segment caster_wheel
-[robot_state_publisher-4] [INFO] [1776044761.238549787] [robot_state_publisher]: got segment imu_link
-[robot_state_publisher-4] [INFO] [1776044761.238553794] [robot_state_publisher]: got segment left_wheel
-[robot_state_publisher-4] [INFO] [1776044761.238557412] [robot_state_publisher]: got segment lidar_link
-[robot_state_publisher-4] [INFO] [1776044761.238561125] [robot_state_publisher]: got segment right_wheel
+[INFO] [gzserver-1]: process started with pid [7105]
+[INFO] [gzclient-2]: process started with pid [7107]
+[INFO] [spawn_entity.py-3]: process started with pid [7109]
+[INFO] [robot_state_publisher-4]: process started with pid [7111]
+[INFO] [map_server-5]: process started with pid [7113]
+[INFO] [amcl-6]: process started with pid [7115]
+[INFO] [lifecycle_manager-7]: process started with pid [7117]
+[INFO] [controller_server-8]: process started with pid [7119]
+[INFO] [planner_server-9]: process started with pid [7121]
+[INFO] [behavior_server-10]: process started with pid [7123]
+[INFO] [bt_navigator-11]: process started with pid [7125]
+[INFO] [lifecycle_manager-12]: process started with pid [7127]
+[INFO] [rviz2-13]: process started with pid [7129]
 [rviz2-13] Warning: Ignoring XDG_SESSION_TYPE=wayland on Gnome. Use QT_QPA_PLATFORM=wayland to run on Wayland anyway.
-[planner_server-9] [INFO] [1776044761.257742201] [planner_server]: 
-[planner_server-9] 	planner_server lifecycle node launched. 
-[planner_server-9] 	Waiting on external lifecycle transitions to activate
-[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-9] [INFO] [1776044761.258790834] [planner_server]: Creating
-[lifecycle_manager-12] [INFO] [1776044761.258239752] [lifecycle_manager_navigation]: Creating
-[lifecycle_manager-12] [INFO] [1776044761.261013442] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
-[bt_navigator-10] [INFO] [1776044761.261490034] [bt_navigator]: 
-[bt_navigator-10] 	bt_navigator lifecycle node launched. 
-[bt_navigator-10] 	Waiting on external lifecycle transitions to activate
-[bt_navigator-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[bt_navigator-10] [INFO] [1776044761.261612148] [bt_navigator]: Creating
-[lifecycle_manager-7] [INFO] [1776044761.262767050] [lifecycle_manager_localization]: Creating
-[behavior_server-11] [INFO] [1776044761.263203133] [behavior_server]: 
-[behavior_server-11] 	behavior_server lifecycle node launched. 
-[behavior_server-11] 	Waiting on external lifecycle transitions to activate
-[behavior_server-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[amcl-6] [INFO] [1776044761.264537250] [amcl]: 
-[amcl-6] 	amcl lifecycle node launched. 
-[amcl-6] 	Waiting on external lifecycle transitions to activate
-[amcl-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[lifecycle_manager-7] [INFO] [1776044761.264767192] [lifecycle_manager_localization]: Creating and initializing lifecycle service clients
-[amcl-6] [INFO] [1776044761.264867762] [amcl]: Creating
-[map_server-5] [INFO] [1776044761.272085833] [map_server]: 
-[map_server-5] 	map_server lifecycle node launched. 
-[map_server-5] 	Waiting on external lifecycle transitions to activate
-[map_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[map_server-5] [INFO] [1776044761.272201978] [map_server]: Creating
-[planner_server-9] [INFO] [1776044761.274264093] [global_costmap.global_costmap]: 
-[planner_server-9] 	global_costmap lifecycle node launched. 
-[planner_server-9] 	Waiting on external lifecycle transitions to activate
-[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[planner_server-9] [INFO] [1776044761.274551278] [global_costmap.global_costmap]: Creating Costmap
-[lifecycle_manager-12] [INFO] [1776044761.275157738] [lifecycle_manager_navigation]: Starting managed nodes bringup...
-[lifecycle_manager-12] [INFO] [1776044761.275188206] [lifecycle_manager_navigation]: Configuring controller_server
-[controller_server-8] [INFO] [1776044761.275632470] [controller_server]: 
+[controller_server-8] [INFO] [1776351189.643641370] [controller_server]: 
 [controller_server-8] 	controller_server lifecycle node launched. 
 [controller_server-8] 	Waiting on external lifecycle transitions to activate
 [controller_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[controller_server-8] [INFO] [1776044761.280072250] [controller_server]: Creating controller server
-[controller_server-8] [INFO] [1776044761.288984785] [local_costmap.local_costmap]: 
+[lifecycle_manager-12] [INFO] [1776351189.643877012] [lifecycle_manager_navigation]: Creating
+[amcl-6] [INFO] [1776351189.644855928] [amcl]: 
+[amcl-6] 	amcl lifecycle node launched. 
+[amcl-6] 	Waiting on external lifecycle transitions to activate
+[amcl-6] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[amcl-6] [INFO] [1776351189.645934110] [amcl]: Creating
+[controller_server-8] [INFO] [1776351189.646639978] [controller_server]: Creating controller server
+[lifecycle_manager-7] [INFO] [1776351189.647968463] [lifecycle_manager_localization]: Creating
+[lifecycle_manager-12] [INFO] [1776351189.649957748] [lifecycle_manager_navigation]: Creating and initializing lifecycle service clients
+[lifecycle_manager-7] [INFO] [1776351189.651168294] [lifecycle_manager_localization]: Creating and initializing lifecycle service clients
+[planner_server-9] [INFO] [1776351189.652251857] [planner_server]: 
+[planner_server-9] 	planner_server lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1776351189.653318132] [planner_server]: Creating
+[behavior_server-10] [INFO] [1776351189.659819003] [behavior_server]: 
+[behavior_server-10] 	behavior_server lifecycle node launched. 
+[behavior_server-10] 	Waiting on external lifecycle transitions to activate
+[behavior_server-10] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[lifecycle_manager-7] [INFO] [1776351189.662124886] [lifecycle_manager_localization]: Starting managed nodes bringup...
+[lifecycle_manager-7] [INFO] [1776351189.662170062] [lifecycle_manager_localization]: Configuring map_server
+[robot_state_publisher-4] [WARN] [1776351189.664772158] [kdl_parser]: The root link base_link has an inertia specified in the URDF, but KDL does not support a root link with an inertia.  As a workaround, you can add an extra dummy link to your URDF.
+[controller_server-8] [INFO] [1776351189.664842758] [local_costmap.local_costmap]: 
 [controller_server-8] 	local_costmap lifecycle node launched. 
 [controller_server-8] 	Waiting on external lifecycle transitions to activate
 [controller_server-8] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
-[controller_server-8] [INFO] [1776044761.289269252] [local_costmap.local_costmap]: Creating Costmap
-[controller_server-8] [INFO] [1776044761.290703468] [controller_server]: Configuring controller interface
-[controller_server-8] [INFO] [1776044761.291120719] [controller_server]: getting goal checker plugins..
-[controller_server-8] [INFO] [1776044761.291179870] [controller_server]: Controller frequency set to 20.0000Hz
-[controller_server-8] [INFO] [1776044761.291203444] [local_costmap.local_costmap]: Configuring
-[controller_server-8] [INFO] [1776044761.293981749] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
-[controller_server-8] [INFO] [1776044761.295971170] [local_costmap.local_costmap]: Subscribed to Topics: scan
-[controller_server-8] [INFO] [1776044761.297466101] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
-[controller_server-8] [INFO] [1776044761.297498229] [local_costmap.local_costmap]: Using plugin "inflation_layer"
-[controller_server-8] [INFO] [1776044761.297842679] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
-[controller_server-8] [INFO] [1776044761.303241431] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
-[controller_server-8] [INFO] [1776044761.303644861] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
-[controller_server-8] [INFO] [1776044761.303724894] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
-[controller_server-8] [INFO] [1776044761.304632377] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
-[controller_server-8] [INFO] [1776044761.304932705] [controller_server]: Setting transform_tolerance to 0.100000
-[controller_server-8] [INFO] [1776044761.312704289] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
-[controller_server-8] [INFO] [1776044761.313053307] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.313152430] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
-[controller_server-8] [INFO] [1776044761.313385460] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.313465062] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
-[controller_server-8] [INFO] [1776044761.313571608] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.313638050] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
-[controller_server-8] [INFO] [1776044761.313854438] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.313929476] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
-[controller_server-8] [INFO] [1776044761.314115447] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.314183194] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
-[controller_server-8] [INFO] [1776044761.314322961] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.314390449] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
-[controller_server-8] [INFO] [1776044761.315038654] [controller_server]: Critic plugin initialized
-[controller_server-8] [INFO] [1776044761.315067463] [controller_server]: Controller Server has FollowPath  controllers available.
-[lifecycle_manager-12] [INFO] [1776044761.320438636] [lifecycle_manager_navigation]: Configuring planner_server
-[planner_server-9] [INFO] [1776044761.320590045] [planner_server]: Configuring
-[planner_server-9] [INFO] [1776044761.320619584] [global_costmap.global_costmap]: Configuring
-[planner_server-9] [INFO] [1776044761.323311254] [global_costmap.global_costmap]: Using plugin "static_layer"
-[planner_server-9] [INFO] [1776044761.325412358] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
-[planner_server-9] [INFO] [1776044761.326292000] [global_costmap.global_costmap]: Initialized plugin "static_layer"
-[planner_server-9] [INFO] [1776044761.326319803] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
-[planner_server-9] [INFO] [1776044761.326519956] [global_costmap.global_costmap]: Subscribed to Topics: scan
-[planner_server-9] [INFO] [1776044761.328425029] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
-[planner_server-9] [INFO] [1776044761.328465861] [global_costmap.global_costmap]: Using plugin "inflation_layer"
-[planner_server-9] [INFO] [1776044761.328759163] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
-[planner_server-9] [INFO] [1776044761.333421835] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
-[planner_server-9] [INFO] [1776044761.333465926] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
-[planner_server-9] [INFO] [1776044761.335268613] [planner_server]: Planner Server has GridBased  planners available.
-[lifecycle_manager-12] [INFO] [1776044761.341959360] [lifecycle_manager_navigation]: Configuring bt_navigator
-[bt_navigator-10] [INFO] [1776044761.342181581] [bt_navigator]: Configuring
-[lifecycle_manager-12] [INFO] [1776044761.388683077] [lifecycle_manager_navigation]: Configuring behavior_server
-[behavior_server-11] [INFO] [1776044761.388854965] [behavior_server]: Configuring
-[behavior_server-11] [INFO] [1776044761.394353815] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
-[behavior_server-11] [INFO] [1776044761.395237612] [behavior_server]: Configuring spin
-[behavior_server-11] [INFO] [1776044761.399123030] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
-[behavior_server-11] [INFO] [1776044761.399610444] [behavior_server]: Configuring backup
-[behavior_server-11] [INFO] [1776044761.401388743] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
-[behavior_server-11] [INFO] [1776044761.402341884] [behavior_server]: Configuring drive_on_heading
-[behavior_server-11] [INFO] [1776044761.405780270] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
-[behavior_server-11] [INFO] [1776044761.406410813] [behavior_server]: Configuring wait
-[lifecycle_manager-12] [INFO] [1776044761.409698504] [lifecycle_manager_navigation]: Activating controller_server
-[controller_server-8] [INFO] [1776044761.409851893] [controller_server]: Activating
-[controller_server-8] [INFO] [1776044761.409894274] [local_costmap.local_costmap]: Activating
-[controller_server-8] [INFO] [1776044761.409909907] [local_costmap.local_costmap]: Checking transform
-[controller_server-8] [INFO] [1776044761.409935993] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
-[rviz2-13] [INFO] [1776044761.467973804] [rviz2]: Stereo is NOT SUPPORTED
-[rviz2-13] [INFO] [1776044761.468092817] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
-[rviz2-13] [INFO] [1776044761.482556221] [rviz2]: Stereo is NOT SUPPORTED
-[lifecycle_manager-7] [INFO] [1776044761.482873283] [lifecycle_manager_localization]: Starting managed nodes bringup...
-[lifecycle_manager-7] [INFO] [1776044761.482903422] [lifecycle_manager_localization]: Configuring map_server
-[map_server-5] [INFO] [1776044761.483158172] [map_server]: Configuring
-[map_server-5] [INFO] [1776044761.483215161] [map_io]: Loading yaml file: /home/kunal-humble/ros2_ws/src/diff_robot/map/map.yaml
-[map_server-5] [INFO] [1776044761.483439805] [map_io]: resolution: 0.05
-[map_server-5] [INFO] [1776044761.483449767] [map_io]: origin[0]: -11.9
-[map_server-5] [INFO] [1776044761.483453924] [map_io]: origin[1]: -11.9
-[map_server-5] [INFO] [1776044761.483457331] [map_io]: origin[2]: 0
-[map_server-5] [INFO] [1776044761.483461256] [map_io]: free_thresh: 0.25
-[map_server-5] [INFO] [1776044761.483464927] [map_io]: occupied_thresh: 0.65
-[map_server-5] [INFO] [1776044761.483469109] [map_io]: mode: trinary
-[map_server-5] [INFO] [1776044761.483474108] [map_io]: negate: 0
-[map_server-5] [INFO] [1776044761.483643428] [map_io]: Loading image_file: /home/kunal-humble/ros2_ws/src/diff_robot/map/map.pgm
-[map_server-5] [INFO] [1776044761.500661558] [map_io]: Read map /home/kunal-humble/ros2_ws/src/diff_robot/map/map.pgm: 477 X 477 map @ 0.05 m/cell
-[lifecycle_manager-7] [INFO] [1776044761.503384337] [lifecycle_manager_localization]: Configuring amcl
-[amcl-6] [INFO] [1776044761.503543883] [amcl]: Configuring
-[amcl-6] [INFO] [1776044761.503603660] [amcl]: initTransforms
-[amcl-6] [INFO] [1776044761.508006255] [amcl]: initPubSub
-[amcl-6] [INFO] [1776044761.510186428] [amcl]: Subscribed to map topic.
-[lifecycle_manager-7] [INFO] [1776044761.512074029] [lifecycle_manager_localization]: Activating map_server
-[map_server-5] [INFO] [1776044761.512214804] [map_server]: Activating
-[map_server-5] [INFO] [1776044761.512611020] [map_server]: Creating bond (map_server) to lifecycle manager.
-[planner_server-9] [INFO] [1776044761.512938906] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 477 X 477 at 0.050000 m/pix
-[amcl-6] [INFO] [1776044761.513065022] [amcl]: Received a 477 X 477 map @ 0.050 m/pix
-[spawn_entity.py-3] [INFO] [1776044761.600554363] [spawn_entity]: Spawn Entity started
-[spawn_entity.py-3] [INFO] [1776044761.600819555] [spawn_entity]: Loading entity XML from file /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/diff_robot.urdf
-[spawn_entity.py-3] [INFO] [1776044761.601463222] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
-[spawn_entity.py-3] [INFO] [1776044761.601705869] [spawn_entity]: Waiting for service /spawn_entity
-[lifecycle_manager-7] [INFO] [1776044761.617274401] [lifecycle_manager_localization]: Server map_server connected with bond.
-[lifecycle_manager-7] [INFO] [1776044761.617319974] [lifecycle_manager_localization]: Activating amcl
-[amcl-6] [INFO] [1776044761.617566046] [amcl]: Activating
-[amcl-6] [INFO] [1776044761.617605705] [amcl]: Creating bond (amcl) to lifecycle manager.
-[rviz2-13] [INFO] [1776044761.623080049] [rviz2]: Trying to create a map of size 477 x 477 using 1 swatches
-[rviz2-13] [ERROR] [1776044761.632899196] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
+[robot_state_publisher-4] [INFO] [1776351189.664881985] [robot_state_publisher]: got segment base_footprint
+[robot_state_publisher-4] [INFO] [1776351189.664940218] [robot_state_publisher]: got segment base_link
+[robot_state_publisher-4] [INFO] [1776351189.664950824] [robot_state_publisher]: got segment caster_wheel
+[robot_state_publisher-4] [INFO] [1776351189.664959162] [robot_state_publisher]: got segment imu_link
+[robot_state_publisher-4] [INFO] [1776351189.664966477] [robot_state_publisher]: got segment left_wheel
+[robot_state_publisher-4] [INFO] [1776351189.664973329] [robot_state_publisher]: got segment lidar_link
+[robot_state_publisher-4] [INFO] [1776351189.664980707] [robot_state_publisher]: got segment right_wheel
+[controller_server-8] [INFO] [1776351189.665219458] [local_costmap.local_costmap]: Creating Costmap
+[map_server-5] [INFO] [1776351189.667047993] [map_server]: 
+[map_server-5] 	map_server lifecycle node launched. 
+[map_server-5] 	Waiting on external lifecycle transitions to activate
+[map_server-5] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[map_server-5] [INFO] [1776351189.667167875] [map_server]: Creating
+[map_server-5] [INFO] [1776351189.667521748] [map_server]: Configuring
+[map_server-5] [INFO] [1776351189.667560362] [map_io]: Loading yaml file: /home/kunal-humble/ros2_ws/src/diff_robot/map/map.yaml
+[map_server-5] [INFO] [1776351189.667783296] [map_io]: resolution: 0.05
+[map_server-5] [INFO] [1776351189.667792704] [map_io]: origin[0]: -11.9
+[map_server-5] [INFO] [1776351189.667796534] [map_io]: origin[1]: -11.9
+[map_server-5] [INFO] [1776351189.667800342] [map_io]: origin[2]: 0
+[map_server-5] [INFO] [1776351189.667804467] [map_io]: free_thresh: 0.25
+[map_server-5] [INFO] [1776351189.667808371] [map_io]: occupied_thresh: 0.65
+[map_server-5] [INFO] [1776351189.667812463] [map_io]: mode: trinary
+[map_server-5] [INFO] [1776351189.667816742] [map_io]: negate: 0
+[map_server-5] [INFO] [1776351189.667972777] [map_io]: Loading image_file: /home/kunal-humble/ros2_ws/src/diff_robot/map/map.pgm
+[lifecycle_manager-12] [INFO] [1776351189.672741492] [lifecycle_manager_navigation]: Starting managed nodes bringup...
+[lifecycle_manager-12] [INFO] [1776351189.672785508] [lifecycle_manager_navigation]: Configuring controller_server
+[controller_server-8] [INFO] [1776351189.673056404] [controller_server]: Configuring controller interface
+[controller_server-8] [INFO] [1776351189.673174511] [controller_server]: getting goal checker plugins..
+[controller_server-8] [INFO] [1776351189.673218729] [controller_server]: Controller frequency set to 20.0000Hz
+[controller_server-8] [INFO] [1776351189.673239288] [local_costmap.local_costmap]: Configuring
+[bt_navigator-11] [INFO] [1776351189.674228837] [bt_navigator]: 
+[bt_navigator-11] 	bt_navigator lifecycle node launched. 
+[bt_navigator-11] 	Waiting on external lifecycle transitions to activate
+[bt_navigator-11] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[bt_navigator-11] [INFO] [1776351189.674392920] [bt_navigator]: Creating
+[controller_server-8] [INFO] [1776351189.678127974] [local_costmap.local_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1776351189.679261262] [global_costmap.global_costmap]: 
+[planner_server-9] 	global_costmap lifecycle node launched. 
+[planner_server-9] 	Waiting on external lifecycle transitions to activate
+[planner_server-9] 	See https://design.ros2.org/articles/node_lifecycle.html for more information.
+[planner_server-9] [INFO] [1776351189.679621441] [global_costmap.global_costmap]: Creating Costmap
+[controller_server-8] [INFO] [1776351189.682521595] [local_costmap.local_costmap]: Subscribed to Topics: scan
+[controller_server-8] [INFO] [1776351189.685983620] [local_costmap.local_costmap]: Initialized plugin "obstacle_layer"
+[controller_server-8] [INFO] [1776351189.686021910] [local_costmap.local_costmap]: Using plugin "inflation_layer"
+[controller_server-8] [INFO] [1776351189.686682860] [local_costmap.local_costmap]: Initialized plugin "inflation_layer"
+[map_server-5] [INFO] [1776351189.692445855] [map_io]: Read map /home/kunal-humble/ros2_ws/src/diff_robot/map/map.pgm: 477 X 477 map @ 0.05 m/cell
+[lifecycle_manager-7] [INFO] [1776351189.695763224] [lifecycle_manager_localization]: Configuring amcl
+[amcl-6] [INFO] [1776351189.696661273] [amcl]: Configuring
+[amcl-6] [INFO] [1776351189.696750463] [amcl]: initTransforms
+[controller_server-8] [INFO] [1776351189.696883185] [controller_server]: Created progress_checker : progress_checker of type nav2_controller::SimpleProgressChecker
+[controller_server-8] [INFO] [1776351189.697526902] [controller_server]: Created goal checker : general_goal_checker of type nav2_controller::SimpleGoalChecker
+[controller_server-8] [INFO] [1776351189.698078118] [controller_server]: Controller Server has general_goal_checker  goal checkers available.
+[controller_server-8] [INFO] [1776351189.699618686] [controller_server]: Created controller : FollowPath of type dwb_core::DWBLocalPlanner
+[controller_server-8] [INFO] [1776351189.700758634] [controller_server]: Setting transform_tolerance to 0.100000
+[amcl-6] [INFO] [1776351189.704765036] [amcl]: initPubSub
+[amcl-6] [INFO] [1776351189.708310357] [amcl]: Subscribed to map topic.
+[controller_server-8] [INFO] [1776351189.709243357] [controller_server]: Using critic "RotateToGoal" (dwb_critics::RotateToGoalCritic)
+[controller_server-8] [INFO] [1776351189.709546303] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.709631205] [controller_server]: Using critic "Oscillation" (dwb_critics::OscillationCritic)
+[controller_server-8] [INFO] [1776351189.709874452] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.709949850] [controller_server]: Using critic "BaseObstacle" (dwb_critics::BaseObstacleCritic)
+[controller_server-8] [INFO] [1776351189.710055491] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.710155045] [controller_server]: Using critic "GoalAlign" (dwb_critics::GoalAlignCritic)
+[controller_server-8] [INFO] [1776351189.710408671] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.710533273] [controller_server]: Using critic "PathAlign" (dwb_critics::PathAlignCritic)
+[controller_server-8] [INFO] [1776351189.710742050] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.710810879] [controller_server]: Using critic "PathDist" (dwb_critics::PathDistCritic)
+[controller_server-8] [INFO] [1776351189.710937687] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.711004718] [controller_server]: Using critic "GoalDist" (dwb_critics::GoalDistCritic)
+[controller_server-8] [INFO] [1776351189.711144181] [controller_server]: Critic plugin initialized
+[controller_server-8] [INFO] [1776351189.711161283] [controller_server]: Controller Server has FollowPath  controllers available.
+[lifecycle_manager-7] [INFO] [1776351189.713118211] [lifecycle_manager_localization]: Activating map_server
+[map_server-5] [INFO] [1776351189.713275580] [map_server]: Activating
+[map_server-5] [INFO] [1776351189.713777764] [map_server]: Creating bond (map_server) to lifecycle manager.
+[amcl-6] [INFO] [1776351189.714481799] [amcl]: Received a 477 X 477 map @ 0.050 m/pix
+[lifecycle_manager-12] [INFO] [1776351189.717401778] [lifecycle_manager_navigation]: Configuring planner_server
+[planner_server-9] [INFO] [1776351189.717902108] [planner_server]: Configuring
+[planner_server-9] [INFO] [1776351189.717942510] [global_costmap.global_costmap]: Configuring
+[planner_server-9] [INFO] [1776351189.722684614] [global_costmap.global_costmap]: Using plugin "static_layer"
+[planner_server-9] [INFO] [1776351189.725279450] [global_costmap.global_costmap]: Subscribing to the map topic (/map) with transient local durability
+[planner_server-9] [INFO] [1776351189.726257118] [global_costmap.global_costmap]: Initialized plugin "static_layer"
+[planner_server-9] [INFO] [1776351189.726280707] [global_costmap.global_costmap]: Using plugin "obstacle_layer"
+[planner_server-9] [INFO] [1776351189.726463144] [global_costmap.global_costmap]: Subscribed to Topics: scan
+[planner_server-9] [INFO] [1776351189.728279171] [global_costmap.global_costmap]: Initialized plugin "obstacle_layer"
+[planner_server-9] [INFO] [1776351189.728345561] [global_costmap.global_costmap]: Using plugin "inflation_layer"
+[planner_server-9] [INFO] [1776351189.728889670] [global_costmap.global_costmap]: Initialized plugin "inflation_layer"
+[planner_server-9] [INFO] [1776351189.734642106] [planner_server]: Created global planner plugin GridBased of type nav2_navfn_planner/NavfnPlanner
+[planner_server-9] [INFO] [1776351189.734670529] [planner_server]: Configuring plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1776351189.734955715] [planner_server]: Planner Server has GridBased  planners available.
+[planner_server-9] [INFO] [1776351189.736879371] [global_costmap.global_costmap]: StaticLayer: Resizing costmap to 477 X 477 at 0.050000 m/pix
+[lifecycle_manager-12] [INFO] [1776351189.740929997] [lifecycle_manager_navigation]: Configuring behavior_server
+[behavior_server-10] [INFO] [1776351189.741140399] [behavior_server]: Configuring
+[behavior_server-10] [INFO] [1776351189.746771178] [behavior_server]: Creating behavior plugin spin of type nav2_behaviors/Spin
+[behavior_server-10] [INFO] [1776351189.747241963] [behavior_server]: Configuring spin
+[behavior_server-10] [INFO] [1776351189.749223154] [behavior_server]: Creating behavior plugin backup of type nav2_behaviors/BackUp
+[behavior_server-10] [INFO] [1776351189.749706236] [behavior_server]: Configuring backup
+[behavior_server-10] [INFO] [1776351189.752043486] [behavior_server]: Creating behavior plugin drive_on_heading of type nav2_behaviors/DriveOnHeading
+[behavior_server-10] [INFO] [1776351189.752523376] [behavior_server]: Configuring drive_on_heading
+[behavior_server-10] [INFO] [1776351189.754375728] [behavior_server]: Creating behavior plugin wait of type nav2_behaviors/Wait
+[behavior_server-10] [INFO] [1776351189.755059635] [behavior_server]: Configuring wait
+[lifecycle_manager-12] [INFO] [1776351189.757383292] [lifecycle_manager_navigation]: Configuring bt_navigator
+[bt_navigator-11] [INFO] [1776351189.757587799] [bt_navigator]: Configuring
+[lifecycle_manager-12] [INFO] [1776351189.800759233] [lifecycle_manager_navigation]: Activating controller_server
+[controller_server-8] [INFO] [1776351189.800872516] [controller_server]: Activating
+[controller_server-8] [INFO] [1776351189.800914708] [local_costmap.local_costmap]: Activating
+[controller_server-8] [INFO] [1776351189.800930577] [local_costmap.local_costmap]: Checking transform
+[controller_server-8] [INFO] [1776351189.800954259] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[lifecycle_manager-7] [INFO] [1776351189.816627472] [lifecycle_manager_localization]: Server map_server connected with bond.
+[lifecycle_manager-7] [INFO] [1776351189.816667818] [lifecycle_manager_localization]: Activating amcl
+[amcl-6] [INFO] [1776351189.816850583] [amcl]: Activating
+[amcl-6] [INFO] [1776351189.816880380] [amcl]: Creating bond (amcl) to lifecycle manager.
+[rviz2-13] [INFO] [1776351189.901021934] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-13] [INFO] [1776351189.901142179] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-13] [INFO] [1776351189.915112859] [rviz2]: Stereo is NOT SUPPORTED
+[lifecycle_manager-7] [INFO] [1776351189.918999814] [lifecycle_manager_localization]: Server amcl connected with bond.
+[lifecycle_manager-7] [INFO] [1776351189.919037120] [lifecycle_manager_localization]: Managed nodes are active
+[lifecycle_manager-7] [INFO] [1776351189.919045740] [lifecycle_manager_localization]: Creating bond timer...
+[spawn_entity.py-3] [INFO] [1776351189.945350299] [spawn_entity]: Spawn Entity started
+[spawn_entity.py-3] [INFO] [1776351189.945573137] [spawn_entity]: Loading entity XML from file /home/kunal-humble/ros2_ws/install/diff_robot/share/diff_robot/urdf/diff_robot.urdf
+[spawn_entity.py-3] [INFO] [1776351189.946038080] [spawn_entity]: Waiting for service /spawn_entity, timeout = 30
+[spawn_entity.py-3] [INFO] [1776351189.946195144] [spawn_entity]: Waiting for service /spawn_entity
+[rviz2-13] [INFO] [1776351190.047126409] [rviz2]: Trying to create a map of size 477 x 477 using 1 swatches
+[rviz2-13] [ERROR] [1776351190.055790498] [rviz2]: Vertex Program:rviz/glsl120/indexed_8bit_image.vert Fragment Program:rviz/glsl120/indexed_8bit_image.frag GLSL link result : 
 [rviz2-13] active samplers with a different type refer to the same texture image unit
-[lifecycle_manager-7] [INFO] [1776044761.719854924] [lifecycle_manager_localization]: Server amcl connected with bond.
-[lifecycle_manager-7] [INFO] [1776044761.719895065] [lifecycle_manager_localization]: Managed nodes are active
-[lifecycle_manager-7] [INFO] [1776044761.719901073] [lifecycle_manager_localization]: Creating bond timer...
-[controller_server-8] [INFO] [1776044761.910003675] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
-[spawn_entity.py-3] [INFO] [1776044762.106047604] [spawn_entity]: Calling service /spawn_entity
-[controller_server-8] [INFO] [1776044762.410014063] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
-[gzserver-1] [WARN] [1776044762.417549225] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
-[gzserver-1] [WARN] [1776044762.421563134] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
-[gzserver-1] [WARN] [1776044762.424569752] [laser_controller]: New subscription discovered on topic '/scan', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: DURABILITY_QOS_POLICY
-[spawn_entity.py-3] [INFO] [1776044762.428321597] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [diff_robot]
-[gzserver-1] [INFO] [1776044762.433489323] [imu_plugin]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
-[rviz2-13] [WARN] [1776044762.505602718] [rviz2]: New publisher discovered on topic '/scan', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: DURABILITY_QOS_POLICY
-[gzserver-1] [INFO] [1776044762.542087917] [diff_drive]: Wheel pair 1 separation set to [0.380000m]
-[gzserver-1] [INFO] [1776044762.542127267] [diff_drive]: Wheel pair 1 diameter set to [0.100000m]
-[gzserver-1] [INFO] [1776044762.543339312] [diff_drive]: Subscribed to [/cmd_vel]
-[gzserver-1] [INFO] [1776044762.544921798] [diff_drive]: Advertise odometry on [/odom]
-[gzserver-1] [INFO] [1776044762.547200688] [diff_drive]: Publishing odom transforms between [odom] and [base_link]
-[gzserver-1] [INFO] [1776044762.547240416] [diff_drive]: Publishing wheel transforms between [base_link], [left_wheel_joint] and [right_wheel_joint]
-[gzserver-1] [INFO] [1776044762.557132614] [diff_robot_joint_state]: Going to publish joint [left_wheel_joint]
-[gzserver-1] [INFO] [1776044762.557189176] [diff_robot_joint_state]: Going to publish joint [right_wheel_joint]
-[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 11988]
-[amcl-6] [INFO] [1776044762.668030956] [amcl]: createLaserObject
-[controller_server-8] [INFO] [1776044762.910200936] [local_costmap.local_costmap]: start
-[controller_server-8] [INFO] [1776044763.112183837] [controller_server]: Creating bond (controller_server) to lifecycle manager.
-[lifecycle_manager-12] [INFO] [1776044763.219540456] [lifecycle_manager_navigation]: Server controller_server connected with bond.
-[lifecycle_manager-12] [INFO] [1776044763.219641273] [lifecycle_manager_navigation]: Activating planner_server
-[planner_server-9] [INFO] [1776044763.220096025] [planner_server]: Activating
-[planner_server-9] [INFO] [1776044763.220220344] [global_costmap.global_costmap]: Activating
-[planner_server-9] [INFO] [1776044763.220266390] [global_costmap.global_costmap]: Checking transform
-[planner_server-9] [INFO] [1776044763.220332940] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044763.720375641] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044764.220396687] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[amcl-6] [WARN] [1776044764.371135735] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-[planner_server-9] [INFO] [1776044764.720390322] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044765.220395994] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044765.720391852] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044766.220388804] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[amcl-6] [WARN] [1776044766.474493079] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-[planner_server-9] [INFO] [1776044766.720389392] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044767.220395931] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044767.720380665] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[planner_server-9] [INFO] [1776044768.220376922] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[amcl-6] [WARN] [1776044768.577943231] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
-[planner_server-9] [INFO] [1776044768.720379985] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
-[rviz2-13] [INFO] [1776044769.165338732] [rviz2]: Setting estimate pose: Frame:map, Position(0.136959, 0.0384087, 0), Orientation(0, 0, -0.0171696, 0.999853) = Angle: -0.0343409
-[amcl-6] [INFO] [1776044769.165722047] [amcl]: initialPoseReceived
-[amcl-6] [WARN] [1776044769.165889112] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1776044769.165290 but the latest data is at time 6.956000, when looking up transform from frame [odom] to frame [base_link])
-[amcl-6] [INFO] [1776044769.165924472] [amcl]: Setting pose (6.900000): 0.137 0.038 -0.034
-[planner_server-9] [INFO] [1776044769.220528107] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 7.016000, but only time 7.967000 is in the buffer, when looking up transform from frame [base_link] to frame [map]
-[planner_server-9] [INFO] [1776044769.720455386] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 7.516000 but the earliest data is at time 7.967000, when looking up transform from frame [base_link] to frame [map]
-[planner_server-9] [INFO] [1776044770.220580602] [global_costmap.global_costmap]: start
-[planner_server-9] [INFO] [1776044771.272020046] [planner_server]: Activating plugin GridBased of type NavfnPlanner
-[planner_server-9] [INFO] [1776044771.273280988] [planner_server]: Creating bond (planner_server) to lifecycle manager.
-[lifecycle_manager-12] [INFO] [1776044771.380267695] [lifecycle_manager_navigation]: Server planner_server connected with bond.
-[lifecycle_manager-12] [INFO] [1776044771.380373240] [lifecycle_manager_navigation]: Activating bt_navigator
-[bt_navigator-10] [INFO] [1776044771.380841263] [bt_navigator]: Activating
-[bt_navigator-10] [INFO] [1776044771.446029818] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
-[lifecycle_manager-12] [INFO] [1776044771.549238455] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
-[lifecycle_manager-12] [INFO] [1776044771.549318848] [lifecycle_manager_navigation]: Activating behavior_server
-[behavior_server-11] [INFO] [1776044771.549810278] [behavior_server]: Activating
-[behavior_server-11] [INFO] [1776044771.549879312] [behavior_server]: Activating spin
-[behavior_server-11] [INFO] [1776044771.549910276] [behavior_server]: Activating backup
-[behavior_server-11] [INFO] [1776044771.549933135] [behavior_server]: Activating drive_on_heading
-[behavior_server-11] [INFO] [1776044771.549956354] [behavior_server]: Activating wait
-[behavior_server-11] [INFO] [1776044771.549985600] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
-[lifecycle_manager-12] [INFO] [1776044771.658581550] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
-[lifecycle_manager-12] [INFO] [1776044771.658670616] [lifecycle_manager_navigation]: Managed nodes are active
-[lifecycle_manager-12] [INFO] [1776044771.658703488] [lifecycle_manager_navigation]: Creating bond timer...
+[controller_server-8] [INFO] [1776351190.301055218] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[spawn_entity.py-3] [INFO] [1776351190.450293190] [spawn_entity]: Calling service /spawn_entity
+[gzserver-1] [WARN] [1776351190.642151424] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[gzserver-1] [WARN] [1776351190.645936860] [rcl]: Found remap rule '~/out:=scan'. This syntax is deprecated. Use '--ros-args --remap ~/out:=scan' instead.
+[gzserver-1] [WARN] [1776351190.648970956] [laser_controller]: New subscription discovered on topic '/scan', requesting incompatible QoS. No messages will be sent to it. Last incompatible policy: DURABILITY_QOS_POLICY
+[spawn_entity.py-3] [INFO] [1776351190.653678340] [spawn_entity]: Spawn status: SpawnEntity: Successfully spawned entity [diff_robot]
+[gzserver-1] [INFO] [1776351190.660802850] [imu_plugin]: <initial_orientation_as_reference> is unset, using default value of false to comply with REP 145 (world as orientation reference)
+[gzserver-1] [INFO] [1776351190.775921455] [diff_drive]: Wheel pair 1 separation set to [0.380000m]
+[gzserver-1] [INFO] [1776351190.775975428] [diff_drive]: Wheel pair 1 diameter set to [0.100000m]
+[gzserver-1] [INFO] [1776351190.777863855] [diff_drive]: Subscribed to [/cmd_vel]
+[gzserver-1] [INFO] [1776351190.779539793] [diff_drive]: Advertise odometry on [/odom]
+[gzserver-1] [INFO] [1776351190.783221297] [diff_drive]: Publishing odom transforms between [odom] and [base_link]
+[gzserver-1] [INFO] [1776351190.783265722] [diff_drive]: Publishing wheel transforms between [base_link], [left_wheel_joint] and [right_wheel_joint]
+[INFO] [spawn_entity.py-3]: process has finished cleanly [pid 7109]
+[gzserver-1] [INFO] [1776351190.795824856] [diff_robot_joint_state]: Going to publish joint [left_wheel_joint]
+[gzserver-1] [INFO] [1776351190.795867260] [diff_robot_joint_state]: Going to publish joint [right_wheel_joint]
+[controller_server-8] [INFO] [1776351190.801018473] [local_costmap.local_costmap]: Timed out waiting for transform from base_link to odom to become available, tf error: Invalid frame ID "odom" passed to canTransform argument target_frame - frame does not exist
+[rviz2-13] [WARN] [1776351190.896897476] [rviz2]: New publisher discovered on topic '/scan', offering incompatible QoS. No messages will be sent to it. Last incompatible policy: DURABILITY_QOS_POLICY
+[amcl-6] [INFO] [1776351190.897930213] [amcl]: createLaserObject
+[controller_server-8] [INFO] [1776351191.301109677] [local_costmap.local_costmap]: start
+[controller_server-8] [INFO] [1776351191.551936403] [controller_server]: Creating bond (controller_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1776351191.658639978] [lifecycle_manager_navigation]: Server controller_server connected with bond.
+[lifecycle_manager-12] [INFO] [1776351191.658756288] [lifecycle_manager_navigation]: Activating planner_server
+[planner_server-9] [INFO] [1776351191.659267145] [planner_server]: Activating
+[planner_server-9] [INFO] [1776351191.659408338] [global_costmap.global_costmap]: Activating
+[planner_server-9] [INFO] [1776351191.659449555] [global_costmap.global_costmap]: Checking transform
+[planner_server-9] [INFO] [1776351191.659516996] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351192.159563692] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351192.659573285] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351192.904157169] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351193.159572778] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351193.659571158] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351194.159572148] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351194.659572003] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351195.015978389] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351195.159569318] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351195.659577115] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351196.159564665] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351196.659574638] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351197.119366547] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351197.159564268] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351197.659575178] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351198.159570626] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351198.659576540] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351199.159581600] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351199.222785249] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351199.659579569] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351200.159573758] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351200.659558228] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351201.159573025] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351201.326078719] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351201.659580057] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351202.159573219] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351202.659566974] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351203.159573493] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351203.429461077] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351203.659611947] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351204.159562476] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351204.659570556] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351205.159560879] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351205.533279437] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351205.659563289] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351206.159563971] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351206.659587429] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351207.161351939] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351207.648562801] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351207.659566391] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351208.159560556] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351208.660135259] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351209.159577268] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351209.659545669] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351209.685681222] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351210.159546730] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351210.659571325] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351211.159907167] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351211.659576835] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351211.825166748] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351212.160251400] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351212.659586215] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351213.159686805] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351213.659588439] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351213.969721821] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351214.161308342] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351214.659565223] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351215.159645957] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351215.659568885] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[amcl-6] [WARN] [1776351216.125443390] [amcl]: AMCL cannot publish a pose or update the transform. Please set the initial pose...
+[planner_server-9] [INFO] [1776351216.159568087] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[planner_server-9] [INFO] [1776351216.659552307] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Invalid frame ID "map" passed to canTransform argument target_frame - frame does not exist
+[rviz2-13] [INFO] [1776351217.116897854] [rviz2]: Setting estimate pose: Frame:map, Position(0.104752, 0.0372828, 0), Orientation(0, 0, -0.00128665, 0.999999) = Angle: -0.00257329
+[amcl-6] [INFO] [1776351217.117267688] [amcl]: initialPoseReceived
+[amcl-6] [WARN] [1776351217.117375179] [amcl]: Failed to transform initial pose in time (Lookup would require extrapolation into the future.  Requested time 1776351217.116854 but the latest data is at time 26.208000, when looking up transform from frame [odom] to frame [base_link])
+[amcl-6] [INFO] [1776351217.117390369] [amcl]: Setting pose (26.200000): 0.105 0.037 -0.003
+[planner_server-9] [INFO] [1776351217.159967601] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation at time 26.248000, but only time 27.218000 is in the buffer, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1776351217.659597062] [global_costmap.global_costmap]: Timed out waiting for transform from base_link to map to become available, tf error: Lookup would require extrapolation into the past.  Requested time 26.738000 but the earliest data is at time 27.218000, when looking up transform from frame [base_link] to frame [map]
+[planner_server-9] [INFO] [1776351218.159681274] [global_costmap.global_costmap]: start
+[planner_server-9] [INFO] [1776351219.211139579] [planner_server]: Activating plugin GridBased of type NavfnPlanner
+[planner_server-9] [INFO] [1776351219.214534275] [planner_server]: Creating bond (planner_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1776351219.328727697] [lifecycle_manager_navigation]: Server planner_server connected with bond.
+[lifecycle_manager-12] [INFO] [1776351219.329135970] [lifecycle_manager_navigation]: Activating behavior_server
+[behavior_server-10] [INFO] [1776351219.330623753] [behavior_server]: Activating
+[behavior_server-10] [INFO] [1776351219.330739468] [behavior_server]: Activating spin
+[behavior_server-10] [INFO] [1776351219.330770972] [behavior_server]: Activating backup
+[behavior_server-10] [INFO] [1776351219.330794348] [behavior_server]: Activating drive_on_heading
+[behavior_server-10] [INFO] [1776351219.330816339] [behavior_server]: Activating wait
+[behavior_server-10] [INFO] [1776351219.330843073] [behavior_server]: Creating bond (behavior_server) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1776351219.441132917] [lifecycle_manager_navigation]: Server behavior_server connected with bond.
+[lifecycle_manager-12] [INFO] [1776351219.441251352] [lifecycle_manager_navigation]: Activating bt_navigator
+[bt_navigator-11] [INFO] [1776351219.443363940] [bt_navigator]: Activating
+[bt_navigator-11] [INFO] [1776351219.529801717] [bt_navigator]: Creating bond (bt_navigator) to lifecycle manager.
+[lifecycle_manager-12] [INFO] [1776351219.635931552] [lifecycle_manager_navigation]: Server bt_navigator connected with bond.
+[lifecycle_manager-12] [INFO] [1776351219.636572537] [lifecycle_manager_navigation]: Managed nodes are active
+[lifecycle_manager-12] [INFO] [1776351219.636611084] [lifecycle_manager_navigation]: Creating bond timer...
 [rviz2-13] Start navigation
-[rviz2-13] [INFO] [1776044809.206495984] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
-[bt_navigator-10] [INFO] [1776044809.208818554] [bt_navigator]: Begin navigating from current location (0.09, 0.02) to (0.39, -1.84)
-[controller_server-8] [INFO] [1776044809.230282154] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044809.230373621] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
-[controller_server-8] [ERROR] [1776044809.283328666] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044809.283509187] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044809.299674285] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044809.300967349] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044809.454428906] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044809.454691535] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044809.469579133] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[planner_server-9] [INFO] [1776044809.470515283] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
-[controller_server-8] [INFO] [1776044810.250059683] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044810.554524797] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044810.554704588] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044810.569356501] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044810.570199189] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044810.724036733] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044810.939832399] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044810.940021563] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[behavior_server-11] [INFO] [1776044810.959883204] [behavior_server]: Running spin
-[behavior_server-11] [INFO] [1776044810.960177993] [behavior_server]: Turning 1.57 for spin behavior.
-[behavior_server-11] [INFO] [1776044812.060473238] [behavior_server]: spin completed successfully
-[controller_server-8] [INFO] [1776044812.109850468] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044812.162647760] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044812.162774218] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044812.179328816] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044812.180203294] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044812.324386299] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044812.380593988] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044812.380718622] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[behavior_server-11] [INFO] [1776044812.399918250] [behavior_server]: Running wait
-[behavior_server-11] [INFO] [1776044817.400245221] [behavior_server]: wait completed successfully
-[controller_server-8] [INFO] [1776044817.449827902] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044817.502966462] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044817.503115092] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044817.519345943] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044817.520209451] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044817.725179236] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044817.781978869] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044817.782164600] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[behavior_server-11] [INFO] [1776044817.800019719] [behavior_server]: Running backup
-[behavior_server-11] [INFO] [1776044817.800279134] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
-[behavior_server-11] [INFO] [1776044821.000563327] [behavior_server]: backup completed successfully
-[controller_server-8] [INFO] [1776044821.049555436] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044821.052970040] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044821.053089265] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044821.069353831] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044821.070180808] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044821.123866608] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044821.173425954] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044821.173609902] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044821.189500056] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[planner_server-9] [INFO] [1776044821.190119188] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
-[controller_server-8] [INFO] [1776044821.250056558] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044821.314960756] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044821.364121326] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044821.364294857] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044821.379335640] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044821.380105908] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044821.524424537] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044821.581149454] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044821.581330677] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[behavior_server-11] [INFO] [1776044821.599656588] [behavior_server]: Running spin
-[behavior_server-11] [INFO] [1776044821.599792249] [behavior_server]: Turning 1.57 for spin behavior.
-[behavior_server-11] [INFO] [1776044822.700090023] [behavior_server]: spin completed successfully
-[controller_server-8] [INFO] [1776044822.749758431] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [ERROR] [1776044822.803218936] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044822.803371575] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[controller_server-8] [INFO] [1776044822.819482314] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
-[controller_server-8] [INFO] [1776044822.820701309] [controller_server]: Received a goal, begin computing control effort.
-[controller_server-8] [WARN] [1776044822.914810834] [controller_server]: Control loop missed its desired rate of 20.0000Hz
-[controller_server-8] [ERROR] [1776044822.975340406] [controller_server]: No valid trajectories out of 0! 
-[controller_server-8] [WARN] [1776044822.975531594] [controller_server]: [follow_path] [ActionServer] Aborting handle.
-[bt_navigator-10] [WARN] [1776044822.999080085] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
-[bt_navigator-10] [ERROR] [1776044822.999336579] [bt_navigator]: Goal failed
+[rviz2-13] [INFO] [1776351238.334066156] [rviz_navigation_dialog_action_client]: NavigateToPose will be called using the BT Navigator's default behavior tree.
+[bt_navigator-11] [INFO] [1776351238.338328233] [bt_navigator]: Begin navigating from current location (0.07, 0.05) to (0.13, -2.89)
+[controller_server-8] [INFO] [1776351238.372228219] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351238.372354513] [controller_server]: No goal checker was specified in parameter 'current_goal_checker'. Server will use only plugin loaded general_goal_checker . This warning will appear once.
+[controller_server-8] [ERROR] [1776351238.674293164] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351238.674391331] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351238.688968539] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351238.690248778] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351238.723013249] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351238.723373824] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351238.741416818] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-9] [INFO] [1776351238.745532414] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[bt_navigator-11] [WARN] [1776351238.748537103] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[controller_server-8] [INFO] [1776351239.190303124] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351239.243151894] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351239.243348415] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351239.258895830] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351239.259449203] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351239.312162646] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-8] [ERROR] [1776351239.364390512] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351239.364494969] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-10] [INFO] [1776351239.379116821] [behavior_server]: Running spin
+[behavior_server-10] [INFO] [1776351239.379256417] [behavior_server]: Turning 1.57 for spin behavior.
+[behavior_server-10] [INFO] [1776351240.379440295] [behavior_server]: spin completed successfully
+[controller_server-8] [INFO] [1776351240.429230270] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351240.432261917] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351240.432424256] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351240.448728009] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351240.449094025] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351240.517903783] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-8] [ERROR] [1776351240.551297295] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351240.551450708] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-10] [INFO] [1776351240.569169671] [behavior_server]: Running wait
+[behavior_server-10] [INFO] [1776351245.769395904] [behavior_server]: wait completed successfully
+[controller_server-8] [INFO] [1776351245.820670661] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351245.877377774] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351245.877619721] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351245.899344496] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351245.900652637] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351245.912175802] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351245.912330131] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-10] [INFO] [1776351245.928886557] [behavior_server]: Running backup
+[behavior_server-10] [INFO] [1776351245.929003511] [behavior_server]: DriveOnHeading: no acceleration or deceleration limits set
+[behavior_server-10] [INFO] [1776351249.229453567] [behavior_server]: backup completed successfully
+[controller_server-8] [INFO] [1776351249.278929664] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351249.331399788] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351249.331506761] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351249.348895072] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351249.350330917] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351249.514857517] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-8] [ERROR] [1776351249.577236335] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351249.577496173] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351249.592349496] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[planner_server-9] [INFO] [1776351249.597501443] [global_costmap.global_costmap]: Received request to clear entirely the global_costmap
+[bt_navigator-11] [WARN] [1776351249.602318416] [BehaviorTreeEngine]: Behavior Tree tick rate 100.00 was exceeded!
+[controller_server-8] [INFO] [1776351250.189473466] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351250.291142082] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351250.291251263] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351250.308649591] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351250.308966255] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351250.511064092] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-8] [ERROR] [1776351250.566993484] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351250.567410576] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[behavior_server-10] [INFO] [1776351250.582165427] [behavior_server]: Running spin
+[behavior_server-10] [INFO] [1776351250.582378642] [behavior_server]: Turning 1.57 for spin behavior.
+[behavior_server-10] [INFO] [1776351251.682701250] [behavior_server]: spin completed successfully
+[controller_server-8] [INFO] [1776351251.728871552] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [ERROR] [1776351251.730445956] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351251.730516005] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[controller_server-8] [INFO] [1776351251.748657992] [local_costmap.local_costmap]: Received request to clear entirely the local_costmap
+[controller_server-8] [INFO] [1776351251.749498614] [controller_server]: Received a goal, begin computing control effort.
+[controller_server-8] [WARN] [1776351251.916386193] [controller_server]: Control loop missed its desired rate of 20.0000Hz
+[controller_server-8] [ERROR] [1776351251.972925970] [controller_server]: No valid trajectories out of 0! 
+[controller_server-8] [WARN] [1776351251.973382086] [controller_server]: [follow_path] [ActionServer] Aborting handle.
+[bt_navigator-11] [WARN] [1776351251.998635450] [bt_navigator]: [navigate_to_pose] [ActionServer] Aborting handle.
+[bt_navigator-11] [ERROR] [1776351251.999118161] [bt_navigator]: Goal failed
 
 
