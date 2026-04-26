@@ -1,2 +1,8 @@
+build/
+install/
+log/
+Mission_Aborted/
 .vscode/
 *.db
+*.pyc
+__pycache__/
